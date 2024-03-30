@@ -1,0 +1,387 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: url(../../../public/Front+Nav-Images/Div2Backg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgb(10, 67, 71);
+    
+
+}
+
+/* Chrome, Edge and Safari */
+body::-webkit-scrollbar {
+    height: 8px;
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: #efe9e9;
+    border: 3px ridge #01000061;
+}
+
+body::-webkit-scrollbar-track:hover {
+    background-color: #636869;
+}
+
+body::-webkit-scrollbar-track:active {
+    background-color: #636869;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #1B3811;
+    border: 5px ridge #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #DFDFDF;
+    border: 5px ridge #FFFFFF;
+
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: #DFDFDF;
+}
+
+.Nav-Bar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.395);
+}
+.logo{
+    height: 100%;
+    width: 100px;
+    padding: 30px;
+    margin-left: 100px;
+}
+.Nav-Bar .logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.Main-Hostels-Lists-2 {
+    display: flex;
+    width: 100%;
+}
+.Nav-Bar p{
+    font-size: 15px;
+    font-weight: 800;
+    padding-top: 10px;
+    margin-left: -20px;
+}
+.Nav-Bar p a{
+    text-decoration: none;
+    color: black;
+    height: auto;
+    width: auto;
+}
+.Hostels-List-Filters {
+    height: auto;
+    width: 22%;
+    padding: 15px;
+    padding-left: 25px;
+    overflow: hidden;
+}
+.Nav-Bar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.Nav-Bar small{
+    color: rgb(206, 206, 206);
+    text-align: end;
+    margin-left: 80px;
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+
+}
+
+.Host-Inn-Section-4-Detailsof3{
+overflow: hidden;
+}
+
+.Single-Room-Booking-Main{
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.Single-Room-Booking-Procedure{
+    width: 50%;
+    padding: 50px;
+}
+.Single-Room-Booking-Procedure h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.Single-Room-Booking-Step1{
+    padding-bottom: 20px;
+    position: relative;
+    
+}   
+.Single-Room-Booking-Step1 h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.Single-Room-Booking-Step1 small{
+    font-size: 13px;
+    font-weight: 400;
+}
+.Single-Room-Booking-Step1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 80%;
+    row-gap: 5px;
+}
+.Single-Room-Booking-Step1 ul li{
+    font-size: 12px;
+    font-weight: 300;
+    list-style: none;
+}
+.Single-Room-Booking-Step1 label{
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: 400;
+}
+.Single-Room-Booking-Step1 select{
+    width: 50%;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    border: none;
+    outline: 1px dashed black;
+    background-color: rgba(81, 136, 166, 0.381);
+    color: white;
+}
+.Single-Room-Booking-Step1 select:focus{
+    border: none;
+    outline: 1px dashed black;
+}
+.Single-Room-Booking-Step2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Single-Room-Booking-Step2 h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.Single-Room-Booking-Step2 label{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 400;
+}
+.Single-Room-Booking-Step2 input{
+    display: block;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+    width: 60%;
+    margin-left: 50px;
+    /* text-align: center; */
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    background-color: rgba(81, 136, 166, 0.381);
+    outline: 1px dashed black;
+}
+
+.Single-Room-Booking-Step3{
+    padding-top: 20px;
+}
+.Single-Room-Booking-Step3 h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.Single-Room-Booking-Step3 label{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 400;
+}
+.Single-Room-Booking-Step3 select{
+    width: 60%;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    border: none;
+    outline: 1px dashed black;
+    font-weight: 600;
+    background-color: rgba(81, 136, 166, 0.381);
+    color: white;
+
+}
+.Single-Room-Booking-Step3 option{
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.Single-Room-Booking-Step3 select:focus{
+    border: none;
+    outline: 1px dashed black;
+}
+.Single-Room-Booking-Step3 input{
+    display: block;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+    width: 60%;
+    margin-left: 50px;
+    /* text-align: center; */
+    border-radius: 50px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(81, 136, 166, 0.381);
+    border: none;
+    padding-left: 20px;
+    outline: 1px dashed black;
+}
+input::placeholder{
+    color: white;
+}
+
+
+.Single-Room-Booking-Right{
+    width: 50%;
+    padding: 50px;
+}
+.Single-Room-Booking-Right-img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+}
+.Single-Room-Booking-Right-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.Single-Room-Booking-Right-Data h5{
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.Single-Room-Booking-Right-Data p{
+    font-size: 13px;
+    font-weight: 400;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.Single-Room-Booking-Right-Data p span{
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.Single-Room-Booking-Right-Data h6{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: end;
+}
+.Single-Room-Booking-Right-Data small{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+.Single-Room-Booking-Right-Data data{
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.Single-Room-Booking-Right-Data data text{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 55px;
+}
+.Single-Room-Booking-Right blockquote{
+    display: flex;
+    justify-content: space-around;
+}
+.Single-Room-Booking-Right input{
+    background-color: rgba(0, 0, 255, 0.434);
+    color: white;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 70px;
+}
+.Single-Room-Booking-Right input:hover{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 255, 0.434);
+    color: rgba(0, 0, 255, 0.434);
+    font-weight: 900;
+}
+.Single-Room-Booking-Procedure input:focus{
+    color: red;
+    animation: anim2 .3s linear forwards 1;
+    overflow: hidden;
+}
+@keyframes anim2 {
+    0%{
+
+    }
+
+    100%{
+        background-color: azure;
+        color: black;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .Single-Room-Booking-Procedure{
+        padding: 5px;
+    }
+    .Single-Room-Booking-Right{
+        padding: 0px;
+    }
+
+    
+}
+@media screen and (max-width:400px) {
+    .Nav-Bar small {
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .logo {
+        margin-left: 40px;
+        
+    }
+    .Single-Room-Booking-Step2 label {
+        font-size: 12px;
+    }
+    .Single-Room-Booking-Step2 input{
+        margin-left: 10px;
+        font-size: 8px;
+    }
+    .Single-Room-Booking-Procedure h2 {
+        font-size: 16px;
+    }
+}

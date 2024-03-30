@@ -1,0 +1,628 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: url(../../../public/Front+Nav-Images/Div2Backg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+
+/* Chrome, Edge and Safari */
+body::-webkit-scrollbar {
+  height: 8px;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #efe9e9;
+  border: 3px ridge #01000061;
+}
+
+body::-webkit-scrollbar-track:hover {
+  background-color: #636869;
+}
+
+body::-webkit-scrollbar-track:active {
+  background-color: #636869;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #1B3811;
+  border: 5px ridge #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #DFDFDF;
+  border: 5px ridge #FFFFFF;
+
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #DFDFDF;
+}
+.toggle {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    border: 6px solid rgba(11, 7, 7, 0.813);
+    right: 15px;
+    clip-path: polygon(0% 20%,
+            60% 20%,
+            60% 0%,
+            100% 50%,
+            60% 100%,
+            60% 80%,
+            0% 80%);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>SideBar<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.Side-Bar {
+    height: 100vh;
+    width: 4.8%;
+    background-color: rgba(29, 86, 86, 0.217);
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+
+.Top-Image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-Image img {
+    height: 50%;
+    width: 50%;
+    border: 5px solid rgba(129, 147, 154, 0.865);
+    border-top: none;
+    border-radius: 20px;
+    transition: all 1s;
+    box-shadow: 4px 10px 5px rgba(20, 79, 87, 0.215),
+        -4px 10px 5px rgba(23, 87, 92, 0.121);
+}
+
+.Top2-Image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top2-Image img {
+    height: 30%;
+    width: 70%;
+    border: 5px solid rgba(129, 147, 154, 0.865);
+    border-top: none;
+    transition: all 1s;
+    border-radius: 20px;
+    box-shadow: 4px 10px 5px rgba(20, 79, 87, 0.215),
+        -4px 10px 5px rgba(23, 87, 92, 0.121);
+}
+
+.List {
+    height: 100%;
+    width: 230px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.Ul-Icons {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.Ul-Icons img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* mix-blend-mode: exclusion; */
+    filter: drop-shadow(2px 4px 5px rgba(101, 32, 32, 0.498)) grayscale(5);
+}
+
+.Ul-Icons a {
+    height: 23px;
+    width: 30px;
+}
+
+.Ul-Icons a:nth-child(1) {
+    margin-top: 27px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0;
+    row-gap: 17px;
+    padding-top: 15px;
+}
+
+ul a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index: 20;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+ul a::before {
+    height: 0%;
+    width: 30%;
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -5px;
+    margin-top: 25px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.352);
+    border-bottom: 1px double rgba(90, 69, 69, 0.5);
+    border-width: 0%;
+}
+
+ul a:hover:before {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-bottom: 7px double rgba(225, 225, 225, 0.699);
+    border-width: 100%;
+    transition: all 0.5s;
+    box-shadow: 5px 3px 5px rgba(25, 131, 164, 0.29);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Dashboard<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.Main-Board {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Rooms <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.Main-Dashboard-Rooms {
+    width: 95.2%;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    /* display: none; */
+}
+
+.Main-Dashboard-Rooms h1:nth-child(1) {
+    margin: 10px;
+}
+
+.Main-Dashboard-Rooms h1 {
+    text-align: center;
+    font-size: 30px;
+  font-weight: 100;
+    color: rgba(0, 41, 43, 0.68);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    animation: 5.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+    text-shadow: 2px 1px 2px rgba(1, 40, 69, 0.338);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Main-Dashboard-Rooms h1::before {
+    position: absolute;
+    content: "Aman";
+    font-size: 50px;
+    color: rgba(57, 97, 121, 0.683);
+    font-weight: 800;
+    top: -30px;
+    z-index: -1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.224);
+}
+
+.Main-Dashboard-Rooms h1:nth-child(1):before {
+    content: "Details";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(3):before {
+    content: "Vacant";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(5):before {
+    content: "Relevant";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(7):before {
+    content: "Filled";
+}
+
+/* .MDB-Luxury-Rooms .Lux-Room2{
+    width: 30%;
+} */
+
+.MDB-Luxury-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    /* background-color: #0b596867;   */
+}
+
+/* body::-webkit-scrollbar {
+    width: 0;
+} */
+
+.MDB-Luxury-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Luxury-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+}
+
+.MDB-Luxury-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Luxury-Rooms .Priceside {
+    color: rgb(100, 100, 100);
+}
+
+.MDB-Luxury-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.MDB-Middle-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+}
+
+.MDB-Middle-Rooms .Priceside {
+    color: rgb(245, 244, 244);
+}
+
+.MDB-Middle-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.MDB-Normal-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Normal-Rooms .Priceside select {
+    color: rgb(245, 244, 244);
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 13px;
+    padding-right: 20px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Normal-Rooms .Priceside select option {
+    font-weight: 200;
+    font-size: 13px;
+    text-align: center;
+}
+
+.MDB-Other-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+}
+
+.MDB-Other-Rooms .Priceside {
+    color: rgb(245, 244, 244);
+}
+
+.MDB-Other-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.Lux-Room {
+    height: auto;
+    width: 100%;
+    background-color: rgba(192, 201, 201, 0.094);
+    box-shadow: -10px 12px 3px rgba(49, 38, 38, 0.288),
+        1px 0px 3px rgba(49, 38, 38, 0.288);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+.Lux-Room2 {
+    height: 53vh;
+    width: 23%;
+}
+
+/* .Lux-Room:nth-child(even) {
+    height: 80%;
+    width: 23%;
+
+}
+.Lux-Room:nth-child(even) h4{
+    font-size: 20px;
+}
+.Lux-Room:nth-child(even):hover {
+    height: 100%;
+    width: 23%;
+}*/
+.Lux-Room .img {
+    height: 136px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.Lux-Room .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.Lux-Room:hover .img img {
+    transform: scale(2);
+    /* margin-top: 20px; */
+    transition: all 1s;
+}
+
+/* .Lux-Room:hover .LR-Hover-Info {
+    opacity: 1;
+    transition: all 1s;
+    padding: 10px;
+    height: auto;
+} */
+
+.LRInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.LRInfo h4 {
+    font-size: 20px;
+}
+
+.LR-Hover-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* color: whitesmoke; */
+    margin-top: -18px;
+    /* font-weight: 200; */
+    padding: 10px;
+    /* opacity: 0;
+    overflow: hidden;
+    height: 0px; */
+}
+
+.LREdits1 {
+    position: absolute;
+    height: 136px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.LREdits {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: relative;
+}
+
+.Lux-Room:hover .LREdits {
+    opacity: 1;
+    transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+}
+
+.LREdits a {
+    color: white;
+    text-decoration: none;
+    /* margin-left: 20px; */
+    padding-right: 10px;
+}
+
+.LR-Hover-Info span {
+    color: rgba(255, 85, 0, 0.979);
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.LR-Hover-Info h6 {
+    display: flex;
+    font-weight: 200;
+    font-size: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.MDB-Middle-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    background-color: #0b5968;
+}
+
+.MDB-Middle-Rooms .LREdits1 {
+    width: 93%;
+}
+
+.MDB-Middle-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Middle-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+}
+
+.MDB-Normal-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    /* background-color: #0b5968; */
+}
+
+.MDB-Normal-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Normal-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+.MDB-Other-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    background-color: #0b5968;
+}
+
+.MDB-Other-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Other-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+.MDB-Normal-Rooms .LRInfo h4 {
+    padding-bottom: 20px;
+}
+
+.MDB-Middle-Rooms .LREdits {
+    flex-direction: column;
+}
+
+.EdtDelPort {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.OccuVacPort {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.OccuVacRooms {
+    height: 45%;
+    width: 45%;
+    background-color: rgba(10, 29, 35, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OccuVacRooms select {
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 40%;
+    background-color: #0b5968;
+    border: 1px solid #ccc;
+    color: whitesmoke;
+}
+
+.OccuVacRooms select option {
+    color: whitesmoke;
+}
+
+.OccuVacPort::-webkit-scrollbar {
+    width: 7px;
+    background-color: #0b5968;
+}
+
+.OccuVacPort::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+}

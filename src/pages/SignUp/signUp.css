@@ -1,0 +1,125 @@
+body {
+    background-image: linear-gradient(to right, #404d51, #108e9f);
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    /* overflow: hidden; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+justify-content: center;}
+.navbar img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    filter: saturate(60%);
+}
+.navbar p{
+    color: #ccc;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+.form-control:not(select) {
+    padding: 10px;
+    padding-left: 70px;
+}
+
+/* select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+} */
+.input-group-text{
+    border: none;
+    position: absolute;
+    z-index: 10;
+    margin-top: 9px;
+    margin-left: 3px;
+}
+#job{
+    z-index: 20;
+    background-color: #1799e4;
+}
+.FLname{
+    display: flex;
+    justify-content: space-between;
+}
+.FLname .input-group{
+    width: 45%;
+    border-radius: 20px;
+}
+.Pass2{
+    margin-top: -20px;
+}
+.btn{
+    background-image: linear-gradient(to right, #2782bb, #bc9b6a);
+    border: none;
+    transition: all .3s;
+    z-index: 20;
+}
+.btn:hover{
+    background-image: linear-gradient(to right, #bc9b6a, #2782bb);
+    transition: all .3s;
+
+}
+.sbmt{
+    width: 100%;
+}
+.Sign-Up-Socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.728);
+    outline: none;
+    border: 2px double rgb(39, 32, 32);
+    border-radius: 30px;
+}
+.border-md {
+    border-width: 2px;
+}
+
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+.Sign-Form::before{
+    top: 0;
+    left: -30px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 110%;
+    background-color: #13324469;
+    margin-top: -20px;
+    border-radius: 20px;
+    visibility: hidden;
+    
+}
+.Sign-Form:hover:before{
+    height: 103.5%;
+    transition: all 1s ease-in-out;
+    visibility: visible;
+
+}

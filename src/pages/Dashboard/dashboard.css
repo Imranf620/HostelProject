@@ -1,0 +1,1355 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: url(../../../public/Front+Nav-Images/Div2Backg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    position: relative;
+}
+/* Chrome, Edge and Safari */
+body::-webkit-scrollbar {
+  height: 8px;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #efe9e9;
+  border: 3px ridge #01000061;
+}
+
+body::-webkit-scrollbar-track:hover {
+  background-color: #636869;
+}
+
+body::-webkit-scrollbar-track:active {
+  background-color: #636869;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #1B3811;
+  border: 5px ridge #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #DFDFDF;
+  border: 5px ridge #FFFFFF;
+
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #DFDFDF;
+}
+.toggle {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    border: 6px solid rgba(11, 7, 7, 0.813);
+    right: 15px;
+    clip-path: polygon(0% 20%,
+            60% 20%,
+            60% 0%,
+            100% 50%,
+            60% 100%,
+            60% 80%,
+            0% 80%);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>SideBar<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.Side-Bar {
+    height: 100vh;
+    width: 4.8%;
+    background-color: rgba(29, 86, 86, 0.217);
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+
+.Top-Image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-Image img {
+    height: 50%;
+    width: 50%;
+    border: 5px solid rgba(129, 147, 154, 0.865);
+    border-top: none;
+    border-radius: 20px;
+    transition: all 1s;
+    box-shadow: 4px 10px 5px rgba(20, 79, 87, 0.215),
+        -4px 10px 5px rgba(23, 87, 92, 0.121);
+}
+
+.Top2-Image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top2-Image img {
+    height: 30%;
+    width: 70%;
+    border: 5px solid rgba(129, 147, 154, 0.865);
+    border-top: none;
+    transition: all 1s;
+    border-radius: 20px;
+    box-shadow: 4px 10px 5px rgba(20, 79, 87, 0.215),
+        -4px 10px 5px rgba(23, 87, 92, 0.121);
+}
+
+.List {
+    height: 100%;
+    width: 230px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.Ul-Icons {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.Ul-Icons img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* mix-blend-mode: exclusion; */
+    filter: drop-shadow(2px 4px 5px rgba(101, 32, 32, 0.498)) grayscale(5);
+}
+
+.Ul-Icons a {
+    height: 23px;
+    width: 30px;
+}
+
+.Ul-Icons a:nth-child(1) {
+    margin-top: 27px;
+}
+
+ul {
+    display: flex;
+    /* flex-direction: column;  chnaged */
+    width: 70%;
+    padding: 0;
+    row-gap: 17px;
+    padding-top: 15px;
+}
+
+ul a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index: 20;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+ul a::before {
+    height: 0%;
+    /* width: 30%;     changed */
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -5px;
+    margin-top: 25px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.352);
+    border-bottom: 1px double rgba(90, 69, 69, 0.5);
+    border-width: 0%;
+}
+
+/* ul a:hover:before {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-bottom: 7px double rgba(225, 225, 225, 0.699);
+    border-width: 100%;
+    transition: all 0.5s;
+    box-shadow: 5px 3px 5px rgba(25, 131, 164, 0.29);
+} commented all */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Dashboard<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.Main-Board {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+.Main-Dashboard-Data {
+    width: 95.2%;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    /* display: none; */
+}
+
+.Main-Dashboard-Data .esin {
+    text-align: center;
+    font-size: 30px;
+  font-weight: 100;
+    color: rgba(0, 41, 43, 0.68);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: 5.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+    text-shadow: 2px 1px 2px rgba(1, 40, 69, 0.532);
+    padding-top: 20px;
+    z-index: 20;
+}
+
+.Main-Dashboard-Data .esin::before {
+    content: "Essential info";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 70px;
+    font-weight: 900;
+    color: #efeded50;
+    top: -30px;
+    z-index: -10;
+}
+
+.Section1 {
+    display: flex;
+    width: 100%;
+}
+
+.Top-Details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    gap: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    /* overflow: hidden; */
+}
+
+.Top-div {
+    height: auto;
+    width: 100%;
+    background-color: rgba(192, 201, 201, 0.094);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+    padding: 5px;
+}
+.Top-Div-Mn{
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+    padding: 5px;
+}
+
+.Top-Div-Mn:hover .Top-div {
+    box-shadow: 12px 13px 6px rgba(49, 38, 38, 0.203),
+        -1px -1px 8px rgba(49, 38, 38, 0.196);
+    transform: scale(.9);
+    transition: all .5s;
+}
+
+.Top-div .up {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.up img {
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.521));
+}
+
+.up text {
+    color: rgb(63, 48, 48);
+    font-weight: 200;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+.Down text {
+    color: black;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.Top-div hr {
+    width: 90%;
+    margin-left: 10px;
+    color: rgb(0, 51, 255);
+}
+
+.Top-div:hover hr {
+    color: white;
+    transition: all 0.3s;
+}
+
+.Fin-Left hr {
+    width: 90%;
+    margin-left: 25%;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.Upcoming-Cat {
+
+    width: 30%;
+    height: 100%;
+    margin-top: 40px;
+    /* background-color: #000000; */
+
+}
+
+.Upcoming-Activity-Data {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(192, 201, 201, 0.094);
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+}
+
+.Upcoming-Activity-Data:hover {
+    box-shadow: -12px 23px 2px rgba(49, 38, 38, 0.365),
+        -1px -1px 8px rgba(49, 38, 38, 0.365);
+    transition: all 0.5s;
+}
+
+.Upcoming-Activity-Data h2 {
+    font-weight: 700;
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+    font-size: 20px;
+}
+
+.About-Fin {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 30px;
+}
+
+.FinL1 {
+    background-color: rgba(192, 201, 201, 0.094);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: -12px 23px 2px rgba(156, 139, 139, 0.315);
+}
+
+.FinLChart .FinL1 h2 {
+    font-weight: 200;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.FinLChart .FinL1 h2::before {
+    position: absolute;
+    content: "Value";
+    z-index: -1;
+    color: #a9a9a985;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    top: -24px;
+    font-weight: 700;
+}
+
+.FinL1 h4 {
+    font-weight: 200;
+    position: relative;
+    font-size: 20px;
+}
+
+.FinL1:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0px 6px 5px rgba(0, 0, 0, 0.256),
+        -2px 3px 2px rgba(49, 38, 38, 0.279), 3px -4px 12px rgba(35, 28, 28, 0.231);
+    transition: all 0.5s;
+}
+
+.FinL2 {
+    width: 60%;
+    padding: 20px;
+    height: auto;
+    background-color: #0b596836;
+}
+
+.FinLChart {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+
+.Fin-Left {
+    width: 60%;
+    /* padding-top: 6px; */
+}
+
+.FAdiv {
+    width: 30%;
+    padding: 5px;
+    background-color: rgba(192, 201, 201, 0.094);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+    transform: scale(0.8);
+}
+
+.FAdiv:nth-child(2) {
+    transform: scale(1.1);
+    border-radius: 30px;
+    box-shadow: 12px 23px 6px rgba(49, 38, 38, 0.365),
+        -1px -1px 8px rgba(49, 38, 38, 0.365);
+}
+
+.FAdiv:nth-child(2):hover {
+    box-shadow: 1px 2px 3px rgba(49, 38, 38, 0.288);
+    transform: scale(0.8);
+}
+
+.FAdiv:hover {
+    box-shadow: 12px 23px 6px rgba(49, 38, 38, 0.365),
+        -1px -1px 8px rgba(49, 38, 38, 0.365);
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.Financial-Portion {
+    display: flex;
+    margin-top: 30px;
+}
+
+.Fin-Right-graph {
+    width: 25%;
+    /* background-color: rgba(29, 86, 86, 0.217); */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    position: absolute;
+    margin-top: 60px;
+    right: 5%;
+}
+
+.Fin-Right-graph input[type="range"] {
+    appearance: none;
+    width: 80%;
+    height: 10px;
+    color: white;
+    background: #0b5968;
+    /* Thumb color */
+    border-radius: 10px;
+    /* Rounded thumb */
+    cursor: pointer;
+    border: 3px double rgb(216, 216, 216);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    /* Thumb color */
+    border-radius: 50%;
+    /* Rounded thumb */
+    border: 5px double rgb(0, 204, 255);
+    cursor: pointer;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Rents<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* .Main-Dashboard-Rents {
+    width: 95.2%;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    display: none;
+}
+
+.RentH1 {
+    text-align: center;
+}
+
+.RentH1 h1 {
+    font-size: 21px;
+    font-weight: 300;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.RentH1 h1::before {
+    position: absolute;
+    content: "Fixed";
+    top: -35px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(158, 158, 158, 0.304);
+    z-index: -10;
+}
+
+.RentH1:nth-child(3) h1::before {
+    content: "Assests";
+}
+
+.RentH1:nth-child(5) h1::before {
+    content: "Dues";
+}
+
+.Roomtype-Rents {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Middle-Room {
+    height: auto;
+    width: 25%;
+    background-color: rgba(192, 201, 201, 0.094);
+    box-shadow: inset 3px 7px 2px rgba(56, 77, 84, 0.71),
+        1px 2px 3px rgba(49, 38, 38, 0.288);
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.Luxury-Room {
+    height: auto;
+    width: 25%;
+    background-color: rgba(192, 201, 201, 0.094);
+    box-shadow: inset 5px 2px 2px rgba(56, 77, 84, 0.71),
+        1px 2px 3px rgba(49, 38, 38, 0.288);
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 50px;
+}
+
+.Normal-Room {
+    height: auto;
+    width: 25%;
+    background-color: rgba(192, 201, 201, 0.094);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: inset 3px 7px 2px rgba(56, 77, 84, 0.71),
+        1px 2px 3px rgba(49, 38, 38, 0.288);
+}
+
+.Middle-Room h3,
+.Normal-Room h3 {
+    font-weight: 300;
+
+}
+
+.Middle-Room:hover h3,
+.Normal-Room:hover h3 {
+    text-shadow: 0px -6px 4px rgb(26, 34, 74);
+    transition: all 0.1s;
+}
+
+.Luxury-Room:hover h3 {
+    text-shadow: 0px -6px 4px rgb(71, 74, 26);
+    transition: all 0.1s;
+}
+
+.Middle-Room small,
+.Normal-Room small,
+.Luxury-Room small {
+    display: block;
+    font-weight: 300;
+}
+
+.Luxury-Room h3 {
+    font-weight: 300;
+}
+
+.Middle-Room:hover,
+.Luxury-Room:hover,
+.Normal-Room:hover {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.331),
+        12px 23px 6px rgba(49, 38, 38, 0.365), -1px -1px 8px rgba(49, 38, 38, 0.365);
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.Rent-Details {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.Rent-Details h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.Total-Rent {
+    height: auto;
+    width: 23%;
+    box-shadow: -10px 12px 3px rgba(49, 38, 38, 0.288);
+    background-color: rgba(192, 201, 201, 0.094);
+    padding: 18px;
+    border-radius: 40px;
+}
+
+.TRCounter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TRCounter p {
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.TRCounter h4 {
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.Total-Rent h5 {
+    padding-top: 80px;
+    font-weight: 300;
+}
+
+.Total-Rent text {
+    display: flex;
+}
+
+.TRCounter text {
+    margin-top: 90px;
+    padding-top: 30px;
+    font-weight: 300;
+}
+
+.Collected-Rent {
+    height: auto;
+    width: 23%;
+    box-shadow: -10px 12px 3px rgba(49, 38, 38, 0.288);
+    background-color: rgba(192, 201, 201, 0.094);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.TRCounter2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.TRCounter2 h5 {
+    font-weight: 300;
+}
+
+.TRCounter2 text {
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.TRCounter3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.TRCounter3 h5 {
+    font-weight: 300;
+}
+
+.TRCounter3 text {
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.Remaining-Rent {
+    height: auto;
+    width: 23%;
+    box-shadow: 10px 12px 3px rgba(49, 38, 38, 0.288);
+    background-color: rgba(192, 201, 201, 0.094);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.Remaining-Rent-People {
+    height: auto;
+    width: 23%;
+    box-shadow: 10px 12px 3px rgba(49, 38, 38, 0.288);
+    background-color: rgba(192, 201, 201, 0.094);
+    padding: 38px;
+    border-radius: 20px;
+}
+
+.Remaining-Rent-People:hover,
+.Remaining-Rent:hover {
+    box-shadow: 12px 23px 6px rgba(49, 38, 38, 0.365),
+        -1px -1px 8px rgba(49, 38, 38, 0.365);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Collected-Rent:hover,
+.Total-Rent:hover {
+    box-shadow: -12px 23px 6px rgba(49, 38, 38, 0.365),
+        1px -1px 8px rgba(49, 38, 38, 0.365);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Dues-Payed-Unpayed {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Payed {
+    height: 30vh;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: inset 6px 3px 3px rgba(33, 29, 29, 0.687), 1px 5px 3px black;
+    background-color: rgba(192, 201, 201, 0.094);
+    overflow-y: scroll;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.317);
+}
+
+.Payed h6 {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-weight: 300;
+}
+
+.Payed h6::before {
+    position: relative;
+    content: ":>";
+    padding-right: 20px;
+}
+
+.Payed h6::after {
+    position: relative;
+    content: "<:";
+    padding-left: 20px;
+}
+
+.Unpayed {
+    height: 30vh;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: inset 6px 3px 3px rgba(33, 29, 29, 0.687), 1px 5px 3px black;
+    background-color: rgba(192, 201, 201, 0.094);
+    overflow-y: scroll;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.317);
+}
+
+td,
+th {
+    padding-left: 30px;
+    padding-right: 37px;
+    font-weight: 300;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Unpayed h6 {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-weight: 300;
+}
+
+.Unpayed h6::before {
+    position: relative;
+    content: ":>";
+    padding-right: 20px;
+}
+
+.Unpayed h6::after {
+    position: relative;
+    content: "<:";
+    padding-left: 20px;
+} */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Rooms <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* .Main-Dashboard-Rooms {
+    width: 95.2%;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    display: none;
+}
+
+.Main-Dashboard-Rooms h1:nth-child(1) {
+    margin: 10px;
+}
+
+.Main-Dashboard-Rooms h1 {
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #0b5968;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Main-Dashboard-Rooms h1::before {
+    position: absolute;
+    content: "Aman";
+    font-size: 50px;
+    color: rgba(57, 97, 121, 0.683);
+    font-weight: 800;
+    top: -30px;
+    z-index: -1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.224);
+}
+
+.Main-Dashboard-Rooms h1:nth-child(1):before {
+    content: "Details";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(3):before {
+    content: "Vacant";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(5):before {
+    content: "Relevant";
+}
+
+.Main-Dashboard-Rooms h1:nth-child(7):before {
+    content: "Filled";
+}
+
+.MDB-Luxury-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+}
+
+
+.MDB-Luxury-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Luxury-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+}
+
+.MDB-Luxury-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Luxury-Rooms .Priceside {
+    color: rgb(100, 100, 100);
+}
+
+.MDB-Luxury-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.MDB-Middle-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+}
+
+.MDB-Middle-Rooms .Priceside {
+    color: rgb(245, 244, 244);
+}
+
+.MDB-Middle-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.MDB-Normal-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Normal-Rooms .Priceside select {
+    color: rgb(245, 244, 244);
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 13px;
+    padding-right: 20px;
+    color: rgb(85, 33, 33);
+}
+
+.MDB-Normal-Rooms .Priceside select option {
+    font-weight: 200;
+    font-size: 13px;
+    text-align: center;
+}
+
+.MDB-Other-Rooms .Nameside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(199, 199, 199);
+}
+
+.MDB-Other-Rooms .Priceside {
+    color: rgb(245, 244, 244);
+}
+
+.MDB-Other-Rooms .Priceside p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.Lux-Room {
+    height: auto;
+    width: 100%;
+    background-color: rgba(192, 201, 201, 0.094);
+    box-shadow: -10px 12px 3px rgba(49, 38, 38, 0.288),
+        1px 0px 3px rgba(49, 38, 38, 0.288);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+.Lux-Room2 {
+    height: 53vh;
+    width: 23%;
+}
+
+.Lux-Room .img {
+    height: 136px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.Lux-Room .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.Lux-Room:hover .img img {
+    transform: scale(2);
+    transition: all 1s;
+}
+.LRInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.LRInfo h4 {
+    font-size: 20px;
+}
+
+.LR-Hover-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -18px;
+    padding: 10px;
+
+}
+
+.LREdits1 {
+    position: absolute;
+    height: 136px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.LREdits {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: relative;
+}
+
+.Lux-Room:hover .LREdits {
+    opacity: 1;
+    transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+}
+
+.LREdits a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.LR-Hover-Info span {
+    color: rgba(255, 85, 0, 0.979);
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.LR-Hover-Info h6 {
+    display: flex;
+    font-weight: 200;
+    font-size: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.MDB-Middle-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    background-color: #0b5968;
+}
+
+.MDB-Middle-Rooms .LREdits1 {
+    width: 93%;
+}
+
+.MDB-Middle-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Middle-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+}
+
+.MDB-Normal-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+}
+
+.MDB-Normal-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Normal-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+.MDB-Other-Rooms {
+    height: 60vh;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+    background-color: #0b5968;
+}
+
+.MDB-Other-Rooms::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.MDB-Other-Rooms::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+.MDB-Normal-Rooms .LRInfo h4 {
+    padding-bottom: 20px;
+}
+
+.MDB-Middle-Rooms .LREdits {
+    flex-direction: column;
+}
+
+.EdtDelPort {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.OccuVacPort {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.OccuVacRooms {
+    height: 45%;
+    width: 45%;
+    background-color: rgba(10, 29, 35, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OccuVacRooms select {
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 40%;
+    background-color: #0b5968;
+    border: 1px solid #ccc;
+    color: whitesmoke;
+}
+
+.OccuVacRooms select option {
+    color: whitesmoke;
+}
+
+.OccuVacPort::-webkit-scrollbar {
+    width: 7px;
+    background-color: #0b5968;
+}
+
+.OccuVacPort::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+} */
+
+
+
+
+@media screen and (max-width:1024px) {
+    .Top-Div-Mn{
+        width: 32%;
+        overflow: hidden;
+    }
+    .Top-Details{
+        gap: 10px;
+    }
+    .List {
+        padding-left: 12px;
+    }
+    .Side-Bar {
+        width: 5.8%;
+    }
+    .Ul-Icons{
+        row-gap: 25px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .Top-Div-Mn {
+        width: 46%;
+        overflow: hidden;
+    }
+    .Side-Bar {
+        width: 5.8%;
+    }
+    .Main-Dashboard-Data {
+        width: 94.2%;
+    }
+    .FAdiv {
+        padding: 20px;
+        width: 31%;
+    }
+    .About-Fin{
+        gap: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .Side-Bar {
+        width: 6.8%;
+    }
+    .List {
+        padding-left: 2px;
+    }
+}
+
+@media screen and (max-width:700px) {   
+    .Section1{
+        display: block;
+    }
+    .Top-Details {
+        width: 95%;
+    }
+    .Top-Div-Mn {
+        width: 30%;
+        gap: 5px;
+    }
+    .Upcoming-Cat {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: 0px 0px 0px transparent;
+    }
+
+    .FinLChart{
+        display: block;
+    }
+    .FinL1 {
+        width: 100%;
+    }
+    .FinL2 {
+        width: 98%;
+        margin-top: 10px;
+    }
+    .Upcoming-Activity-Data{
+        box-shadow: none;
+    }
+    .Upcoming-Activity-Data h2 {
+        padding: 10px;
+    }
+    .FAdiv {
+        padding: 8px;
+        width: 83%;
+        margin-left: 21px;
+        margin-top: 10px;
+        line-height: 10px;
+
+    }
+    .About-Fin{
+        display: block;
+    }
+}
+@media screen and (max-width:650px) {
+    .Side-Bar {
+        width: 7.8%;
+    }
+}
+@media screen and (max-width:550px) {
+    .Side-Bar {
+        width: 8.8%;
+    }
+}
+
+@media screen and (max-width:500px) {   
+    .Top-Div-Mn{
+        width: 46%;
+    }
+    .Main-Dashboard-Data .esin::before {
+        font-size: 50px;
+        top: -11px;
+
+    }
+}
+@media screen and (max-width:450px) {
+    .Side-Bar {
+        width: 9.8%;
+    }
+}
+
+
+@media screen and (max-width:400px) {   
+    .Top-Div-Mn {
+        width: 70%;
+    }
+    .FAdiv {
+        padding: 6px;
+    }
+}

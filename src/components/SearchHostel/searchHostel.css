@@ -1,0 +1,123 @@
+.Hostels-Displays {
+    display: flex;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.402);
+}
+
+.Hostels-Displays-Data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.Hostels-Displays .Img {
+    height: 250px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hostels-Displays .Img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.Hostels-Displays-Data-Left {
+    width: 60%;
+}
+
+.Hostels-Displays-Data-Left h5 {
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Hostels-Displays-Data-Left span,
+.Hostels-Displays-Data-Left text {
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+
+}
+
+.Hostels-Displays-Data-Left ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+.Hostels-Displays-Data-Left ul li {
+    list-style: circle;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.Hostels-Displays-Data-Left input {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 255, 0.607);
+    border-right: 5px double rgba(0, 0, 255, 0.546);
+    border-left: 5px double rgba(0, 0, 255, 0.566);
+    border-radius: 50px;
+    font-size: 13px;
+    margin-left: 20px;
+    visibility: hidden;
+}
+#btn2{
+    visibility: hidden;
+}
+.Hostels-Displays-Data-Right h5,
+.Hostels-Displays-Data-Right text {
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    padding-top: 4px;
+}
+
+.Hostels-Displays-Data-Right small {
+    font-size: 13px;
+
+}
+
+.Hostels-Displays-Data-Right text span {
+    padding: 5px;
+    border-radius: 40px;
+    background-color: rgba(0, 128, 0, 0.457);
+}
+.Hostels-Displays-Data-Right text span span{
+    background-color: transparent;
+}
+
+.Hostels-Displays-Data-Right .Down-price {
+    margin-top: 40%;
+}
+
+.Hostels-Displays-Data-Right input {
+    display: block;
+    background-color: rgba(0, 0, 255, 0.434);
+    color: white;
+    border: 1px solid black;
+    padding: 4px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.Hostels-Displays-Data-Right input:hover {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 255, 0.53);
+    color: black;
+}
